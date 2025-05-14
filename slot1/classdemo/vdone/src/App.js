@@ -4,8 +4,8 @@ import './App.css';
 function App() {
   return (
     <div>
-    <h1>chao bạn</h1>
-    <h2>aloo</h2>
+    <h1>xin chào các bạn</h1>
+    <h2>hello react</h2>
     </div>
   );
 }
