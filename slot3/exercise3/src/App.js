@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./App.css";
 function App() {
   const employees = [
     { id: 1, name: "Anna", department: "HR", age: 50 },
@@ -14,7 +14,7 @@ function App() {
       <h1>Bang nhan vien</h1>
 
       {/* Bắt đầu JSX table */}
-      <table border="1" cellPadding="5" cellSpacing="0">
+      <table className="table-style">
         <thead>
           <tr>
             <th>ID</th>

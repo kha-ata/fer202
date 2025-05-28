@@ -18,7 +18,9 @@ function App() {
       <ul>
         {itEmployees.map((emp, index) => (
           <li key={emp.id || index}>
-            {emp.name} - {emp.department}
+            {emp.id || index +1}
+            
+           - {emp.name} - {emp.department}
           </li>
         ))}
       </ul>

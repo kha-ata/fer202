@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Test - Bootstrap</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header-section {
+            background-color: #e8e8e8;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .header-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .grid-item {
+            background-color: #d0d0d0;
+            border: 1px solid #666;
+            padding: 20px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .footer-section {
+            background-color: #c8a8a8;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .footer-section h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #007bff;
+            background: none;
+        }
+
+        .nav-tabs .nav-link.active {
+            border-bottom-color: #007bff;
+            background: none;
+        }
+
+        .nav-tabs .nav-link.disabled {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-4">
+        <!-- Header Section -->
+        <div class="header-section">
+            <h1>Let's test the <em>grid</em>!</h1>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs mb-4">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+
+        <!-- Grid Layout -->
+        <div class="row g-1 mb-4">
+            <!-- First Row -->
+            <div class="col-6">
+                <div class="grid-item">First col</div>
+            </div>
+            <div class="col-6">
+                <div class="grid-item">Second col</div>
+            </div>
+            
+            <!-- Second Row -->
+            <div class="col-3">
+                <div class="grid-item">col</div>
+            </div>
+            <div class="col-6">
+                <div class="grid-item">col</div>
+            </div>
+            <div class="col-3">
+                <div class="grid-item">col</div>
+            </div>
+            
+            <!-- Third Row -->
+            <div class="col-3">
+                <div class="grid-item">col</div>
+            </div>
+            <div class="col-3">
+                <div class="grid-item">col</div>
+            </div>
+            <div class="col-3">
+                <div class="grid-item">col</div>
+            </div>
+            <div class="col-3">
+                <div class="grid-item">col</div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer-section">
+            <h2>Created by ABC!</h2>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
