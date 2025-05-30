@@ -7,7 +7,7 @@ function NamePerson() {
 
                 {names.map((name, index) => (
 
-                    <li key={index}> {name}</li>
+                    <li key={index}> {index} {name}</li>
 
                 ))}
 

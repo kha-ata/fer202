@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Columns</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-blue {
+            border: 3px solid #007bff;
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        }
+        
+        .card-orange {
+            border: 3px solid #fd7e14;
+            background: linear-gradient(135deg, #fd7e14 0%, #e55a00 100%);
+        }
+        
+        .card-red {
+            border: 3px solid #dc3545;
+            background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%);
+        }
+        
+        .card-body {
+            background: white;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        
+        .card-text {
+            color: #6c757d;
+            font-weight: 500;
+        }
+        
+        .main-title {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: left;
+            font-size: 2.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container my-5">
+        <h1 class="main-title">Cards Columns</h1>
+        
+        
+        
+        <!-- Thêm hàng thứ hai để demo -->
+        <div class="row g-4 mt-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-blue h-100">
+                    <div class="card-body text-center">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top rounded mb-3" alt="Car">
+                        <p class="card-text">Another card with different content</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-orange h-100">
+                    <div class="card-body text-center">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top rounded mb-3" alt="Car">
+                        <p class="card-text">Another card with different content</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-red h-100">
+                    <div class="card-body text-center">
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top rounded mb-3" alt="Car">
+                        <p class="card-text">Another card with different content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
