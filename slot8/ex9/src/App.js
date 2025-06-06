@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
-import FPTPage from './component5/FPTPage';
+import SimpleCard from './components4/SimpleCard';
+import Fpt from './component5/Fpt';
+import MyProfile from './components1/MyProfile';
 function App() {
   return (
       <div>
 
-        <FPTPage />
+        <SimpleCard/>
+        <MyProfile/>
+        <Fpt/>
       </div>
   );
 }
