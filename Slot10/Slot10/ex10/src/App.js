@@ -31,6 +31,12 @@ function App() {
         <button onClick={() => setCount(count + 1)}>
           Click me
         </button>
+       <button onClick={() => {
+  if (count > 0) setCount(count - 1);
+}}>
+  Click me down
+</button>
+        
       </div>
       <div>
         <h1>ViDu2</h1>
