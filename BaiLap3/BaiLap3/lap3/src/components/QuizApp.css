@@ -1,0 +1,22 @@
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+  padding: 40px 0;
+}
+.quiz-title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+.quiz-card {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+  min-width: 350px;
+  max-width: 400px;
+}
