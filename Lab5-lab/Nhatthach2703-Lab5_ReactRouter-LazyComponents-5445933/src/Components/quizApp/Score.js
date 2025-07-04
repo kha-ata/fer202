@@ -10,11 +10,7 @@ class Score extends Component {
     const { score, totalQuestions } = this.props
 
     return (
-      // <Card className="text-center">
-      //   <Card.Body>
 
-      //   </Card.Body>
-      // </Card>
       <div className='text-center'>
         <Card.Title as="h2">Congratulations on completing the quiz!</Card.Title>
         <Card.Title>Your Score: {score} / {totalQuestions}</Card.Title>
