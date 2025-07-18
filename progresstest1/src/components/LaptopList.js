@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Button, Form, Alert } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form, Alert, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import axios from 'axios';
@@ -49,7 +49,23 @@ const LaptopList = () => {
   return (
     <Container className="mt-4">
       <h2 className="mb-4">Laptop Management</h2>
-      
+      {/* ✅ Carousel Section */}
+      <Carousel  className="mb-4">
+        {laptops.map(laptop => (
+          <Carousel.Item key={laptop.id}>
+            <img
+              className="d-block w-100"
+              src={laptop.image}
+              alt={`${laptop.brand} ${laptop.model}`}
+              style={{ height: '400px', objectFit: 'cover', width: '100%' }}
+            />
+            <Carousel.Caption>
+              <h3>{laptop.brand} {laptop.model}</h3>
+              <p>{laptop.year} - {laptop.price}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
       {/* Search Section */}
       <Row className="mb-4">
         <Col md={8}>
@@ -78,7 +94,7 @@ const LaptopList = () => {
                 variant="top" 
                 src={laptop.image} 
                 alt={`${laptop.brand} ${laptop.model}`}
-                style={{ height: '200px', objectFit: 'cover' }}
+style={{ height: '200px', objectFit: 'cover' }}
               />
               <Card.Body>
                 <Card.Title>{laptop.brand} {laptop.model}</Card.Title>
