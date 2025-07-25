@@ -5,6 +5,7 @@ import { store } from "./app/store";
 import ProductList from "./pages/ProductList";
 import ProductDetail from "./pages/ProductDetail";
 import EditProduct from "./pages/EditProduct";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 function App() {

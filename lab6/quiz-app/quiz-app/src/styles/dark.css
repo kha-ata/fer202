@@ -1,0 +1,25 @@
+.quiz-wrapper {
+  padding: 30px;
+}
+
+.quiz-title {
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.nav-buttons,
+.submit-button {
+  text-align: center;
+  margin-top: 15px;
+}
